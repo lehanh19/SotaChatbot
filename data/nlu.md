@@ -1,0 +1,168 @@
+## intent:ask_paper1
+- Cho anh vài paper về [semantic segmentation](keyword) đi em
+- Cho anh vài paper về [semantic segment](keyword) đi em
+- paper [text summarization](keyword)
+- paper [text detection](keyword)
+- paper [text detect](keyword)
+- paper [face detection](keyword)
+- paper [face detect](keyword)
+- paper [face recognition](keyword)
+- paper [text recognition](keyword)
+- paper [GAN](keyword)
+- Tìm cho anh mấy paper mới về [text classify](keyword) đi
+- Tìm cho anh mấy paper mới về [text classification](keyword) đi
+- có paper nào hay về [image classification](keyword) không em
+- có paper nào hay về [image classify](keyword) không em
+- Có paper nào mới về [instance segment](keyword) không em?
+- Có paper nào mới về [instance segmentation](keyword) không em?
+- Paper về [text classification](keyword)
+- Có paper nào về [object detection](keyword) hay không em
+- Có paper nào về [object detect](keyword) hay không em
+- Cho anh xin vài paper về [colorize grayscale image](keyword) nào
+- Không biết [object detection](keyword) có paper nào hay không
+- Tìm giúp anh paper về [text generation](keyword) với em
+- Tìm giúp anh paper [Moving beyond Supervised Learning](keyword)) với
+- Search giúp anh vài paper hot về [OCR](keyword) với
+- [NLP](keyword) có những paper nào em nhỉ
+
+## intent:ask_paper2
+- [CVPR](conference) [năm nay](year) có những paper nào hay
+- [ICASSP](conference) [năm nay](year) có những paper nào hay
+- Paper của [AAAI](conference) [2020](year)
+- Paper của [ICSE](conference) [2020](year)
+- Paper của [VLDB](conference) [2020](year)
+- Những paper thuộc [ECCV](conference) [2019](year) đi em
+- Những paper thuộc [INFOCOM](conference) [2019](year) đi em
+- Những paper thuộc [SP](conference) [2019](year) đi em
+- Paper [IEEE](conference) [2020](year)
+- Paper [EMNLP](conference) [2020](year)
+- Tìm giúp anh những paper thuộc [ICML](conference) [2018](year) với
+- Tìm giúp anh những paper thuộc [CHI](conference) [2018](year) với
+- Tìm giúp anh những paper thuộc [SIGCOMM](conference) [2018](year) với
+- Tìm giúp anh những paper thuộc [WWW](conference) [2018](year) với
+- Cho anh xin vài paper thuộc [NIPS](conference) [2017](year) nào
+- Cho anh xin vài paper thuộc [SIGKDD](conference) [2015](year) nào
+- Tìm giúp anh các paper thuộc [ICCV](conference) [2020](year)
+- Tìm giúp anh các paper thuộc [ICRA](conference) [2016](year)
+- Search giúp anh vài paper hay thuộc [ACL](conference) [2019](year)
+- Search giúp anh vài paper hay thuộc [CCS](conference) [2019](year)
+- [AAAI](conference) [2020](year) có paper nào hot không em
+- [USENIX Security](conference) [2020](year) có paper nào hot không em
+
+## intent:ask_paper3
+- [CVPR](conference) [năm nay](year) có paper nào về [image classify](keyword) không?
+- [USENIX Security](conference) [năm nay](year) có paper nào về [image classification](keyword) không em
+- [CCS](conference) [năm nay](year) có paper nào về [text classification](keyword) không em
+- [ACL](conference) [năm nay](year) có paper nào về [text classify](keyword) không em
+- Những paper về [object detection](keyword) trong [ICRA](conference) [năm nay](year)
+- Những paper về [object detect](keyword) trong [ICCV](conference) [năm nay](year)
+- Những paper về [semantic segmentation](keyword) trong [SIGKDD](conference) [năm nay](year)
+- Những paper về [semantic segment](keyword) trong [NIPS](conference) [năm nay](year)
+- [AAAI](conference) có paper nào hay về [GAN](keyword) không em
+- Cho anh xin vài paper về [NLP](keyword) của [ICML](conference) [2019](year) với
+- Cho anh xin vài paper về [text summarization](keyword) của [SIGCOMM](conference) [2019](year) với
+- Cho anh xin vài paper về [text detection](keyword) của [CHI](conference) [2017](year) với
+- Cho anh xin vài paper về [text detect](keyword) của [EMNLP](conference) [2019](year) với
+- Paper [face detection](keyword) thuộc [AAAI](conference) [2018](year)
+- Paper [face detect](keyword) thuộc [ICASSP](conference) [2018](year)
+- Tìm giúp anh paper [text generation](keyword) của [ACL](conference) [2020](year) với em
+- Tìm giúp anh paper [text recognition](keyword) của [ACL](conference) [2019](year) với em
+- Tìm giúp anh paper [face recognition](keyword) của [IEEE](conference) [2020](year) với em
+- Tìm giúp anh paper [instance segmentation](keyword) của [SP](conference) [2020](year) với em
+- Tìm giúp anh paper [instance segmentat](keyword) của [INFOCOM](conference) [2020](year) với em
+- search giúp anh vài paper về [colorize grayscale image](keyword) thuộc [AAAI](conference) [năm nay](year) với
+- search giúp anh vài paper về [OCR]](keyword) thuộc [ECCV]](conference) [2018](year) với
+- search giúp anh vài paper về [secmantation](keyword) thuộc [VLDB](conference) [năm nay](year) với
+- search giúp anh vài paper về [colorize grayscale image](keyword) thuộc [ICSE](conference) [2016](year) với
+
+## intent:ask_trending1
+- Đang có hot không em?
+- đang có gì hot vậy em
+- đang có trend gì vậy em
+- đang có trending gì vậy em
+- Cho anh xin mấy trending hiện giờ với
+- Cho anh xin mấy trend hiện giờ
+- Cho anh xin mấy trend hiện nay
+- Có cái gì mới không nhỉ?
+- Tuần này có gì hot không em
+- Tuần này có gì mới không em
+- tuần này có gì hay không em
+- Đang có trend gì vậy em
+- đang có trending gì vậy em
+- Cho anh xin trending tuần này với
+- Hot nhất hôm nay là gì
+- Trending hôm nay là gì
+- Trend hôm nay là gì
+- trend tuần này là gì
+- Trending tuần này
+- show anh mấy trend hiện nay đi
+- đang có gì hot vậy em
+- hôm nay có gì mới không em
+- hôm nay có gì hay không em
+- hôm nay có gì hot không em
+- cho anh hít ít trend với
+- cho anh hít ít trending nào
+- Trending
+- Trend
+- Có gì hot không em
+- Có trend gì không em
+- Có trending gì vậy
+- Có gì mới vậy
+
+## intent:ask_trending2
+- Github [hôm nay](time) có gì hot
+- Github [tuần này](time) có gì hot không
+- github [tháng này](time) có gì hot không
+- github [hôm nay](time) có trend gì vậy
+- github [hôm nay](time) đang có trending gì
+- github [hôm nay](time) có gì mới
+- github [tuần này](time) có trend gì vậy
+- github [tuần này](time) đang có trending gì
+- github [tuần này](time) có gì mới
+- github [tháng này](time) có trend gì vậy
+- github [tháng này](time) đang có trending gì
+- github [tháng này](time) có gì mới
+- [Tuần này](time) github có gì nhỉ
+- Trending gitbub [tháng này](time)
+- [Hôm nay](time) github có gì hot không em
+- [hôm nay](time) github có gì mới không em
+- [hôm nay](time) github có trend gì vậy em
+- [hôm nay](time) github có trending gì vậy
+- [Tuần này](time) github có trend gì vậy
+- [Tuần này](time) github có trending gì vậy
+- [tuần này](time) Github có gì hot
+- [tuần này](time) Github có gì mới vậy
+- [Tháng này](time) github có gì mới không em
+- [tháng này](time) github có gì hot vậy
+- [tháng này](time) github đang có trend gì
+- trend github [dạo này](time) là gì
+- trend github [gần đây](time) là gì
+- dạo [gần đây](time) github có gì hot không em
+- [dạo này](time) github có gì mới vậy em
+- cho anh xin mấy trending github [hiện giờ](time) với
+- cho anh xin mấy trend github [hiện giờ](time) với
+- cho anh xin mấy trending github [hiện nay](time) với
+- cho anh xin mấy trend github [hiện nay](time) với
+
+## intent:ask_trending3
+- Paperwithcode đang trend gì nhỉ?
+- paperwithcode đang có trending gì
+- paperwithcode đang có gì hot
+- paperwithcode dạo này có gì mới không em
+- paperwithcode hiện giờ đang có gì hot với
+- hiện giờ paperwithcode có gì hot không em
+- hiện giờ paperwithcode đang có trend gì vậy
+- trending hiện nay của paperwithcode
+- trend hiện nay trên paperwithcode
+- có gì hot trên paperwithcode không em
+- có gì mới trên paperwithcode không em
+- có trend gì trên paperwithcode không em
+- có trending gì trên paperwithcode vậy em
+- search giúp anh vài trending trên paperwithcode với
+- tìm giúp anh ít trending trên paperwithcode nào
+- hiện tại paperwithcode có gì hot vậy em
+- hiện tại paperwithcode có gì thú vị nhỉ
+- search cho anh vài cái thú vị trên paperwithcode
+- paperwithcode có gì thú vị không em
+- paperwithcode có gì hay ho không em 
+- paperwithcode có gì mới không em
