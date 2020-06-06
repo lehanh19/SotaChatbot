@@ -1,79 +1,64 @@
-## intent:ask_paper1
-- Cho anh vài paper về [semantic segmentation](keyword) đi em
-- Cho anh vài paper về [semantic segment](keyword) đi em
-- paper [text summarization](keyword)
-- paper [text detection](keyword)
-- paper [text detect](keyword)
-- paper [face detection](keyword)
-- paper [face detect](keyword)
-- paper [face recognition](keyword)
-- paper [text recognition](keyword)
-- paper [GAN](keyword)
-- Tìm cho anh mấy paper mới về [text classify](keyword) đi
-- Tìm cho anh mấy paper mới về [text classification](keyword) đi
-- có paper nào hay về [image classification](keyword) không em
-- có paper nào hay về [image classify](keyword) không em
-- Có paper nào mới về [instance segment](keyword) không em?
-- Có paper nào mới về [instance segmentation](keyword) không em?
-- Paper về [text classification](keyword)
-- Có paper nào về [object detection](keyword) hay không em
-- Có paper nào về [object detect](keyword) hay không em
-- Cho anh xin vài paper về [colorize grayscale image](keyword) nào
-- Không biết [object detection](keyword) có paper nào hay không
-- Tìm giúp anh paper về [text generation](keyword) với em
-- Tìm giúp anh paper [Moving beyond Supervised Learning](keyword)) với
-- Search giúp anh vài paper hot về [OCR](keyword) với
-- [NLP](keyword) có những paper nào em nhỉ
-
-## intent:ask_paper2
+## intent:ask_paper
+- Cho anh vài paper về [semantic segmentation](topic) đi em
+- paper [text summarization](topic)
+- paper [text detection](topic)
+- paper [face detection](topic)
+- paper [face recognition](topic)
+- paper [text recognition](topic)
+- paper [GAN](topic)
+- Tìm cho anh mấy paper mới về [text classification](topic) đi
+- có paper nào hay về [image classification](topic) không em
+- Có paper nào mới về [instance segment](topic) không em?
+- Có paper nào mới về [instance segmentation](topic) không em?
+- Paper về [text classification](topic)
+- Có paper nào về [object detection](topic) hay không em
+- Cho anh xin vài paper về [colorize grayscale image](topic) nào
+- Không biết [object detection](topic) có paper nào hay không
+- Tìm giúp anh paper về [text generation](topic) với em
+- Tìm giúp anh paper [Moving beyond Supervised Learning](topic)) với
+- Search giúp anh vài paper hot về [OCR](topic) với
+- [NLP](topic) có những paper nào em nhỉ
 - [CVPR](conference) [năm nay](year) có những paper nào hay
-- [ICASSP](conference) [năm nay](year) có những paper nào hay
 - Paper của [AAAI](conference) [2020](year)
 - Paper của [ICSE](conference) [2020](year)
-- Paper của [VLDB](conference) [2020](year)
-- Những paper thuộc [ECCV](conference) [2019](year) đi em
-- Những paper thuộc [INFOCOM](conference) [2019](year) đi em
+- Những paper thuộc [ECCV](conference) [2019](year)
 - Những paper thuộc [SP](conference) [2019](year) đi em
 - Paper [IEEE](conference) [2020](year)
 - Paper [EMNLP](conference) [2020](year)
 - Tìm giúp anh những paper thuộc [ICML](conference) [2018](year) với
-- Tìm giúp anh những paper thuộc [CHI](conference) [2018](year) với
-- Tìm giúp anh những paper thuộc [SIGCOMM](conference) [2018](year) với
-- Tìm giúp anh những paper thuộc [WWW](conference) [2018](year) với
+- Tìm giúp anh những paper thuộc [SIGCOMM](conference) [năm kia](year) với
 - Cho anh xin vài paper thuộc [NIPS](conference) [2017](year) nào
 - Cho anh xin vài paper thuộc [SIGKDD](conference) [2015](year) nào
 - Tìm giúp anh các paper thuộc [ICCV](conference) [2020](year)
 - Tìm giúp anh các paper thuộc [ICRA](conference) [2016](year)
 - Search giúp anh vài paper hay thuộc [ACL](conference) [2019](year)
-- Search giúp anh vài paper hay thuộc [CCS](conference) [2019](year)
+- Search giúp anh vài paper hay thuộc [CCS](conference) [năm ngoái](year)
 - [AAAI](conference) [2020](year) có paper nào hot không em
 - [USENIX Security](conference) [2020](year) có paper nào hot không em
-
-## intent:ask_paper3
-- [CVPR](conference) [năm nay](year) có paper nào về [image classify](keyword) không?
-- [USENIX Security](conference) [năm nay](year) có paper nào về [image classification](keyword) không em
-- [CCS](conference) [năm nay](year) có paper nào về [text classification](keyword) không em
-- [ACL](conference) [năm nay](year) có paper nào về [text classify](keyword) không em
-- Những paper về [object detection](keyword) trong [ICRA](conference) [năm nay](year)
-- Những paper về [object detect](keyword) trong [ICCV](conference) [năm nay](year)
-- Những paper về [semantic segmentation](keyword) trong [SIGKDD](conference) [năm nay](year)
-- Những paper về [semantic segment](keyword) trong [NIPS](conference) [năm nay](year)
-- [AAAI](conference) có paper nào hay về [GAN](keyword) không em
-- Cho anh xin vài paper về [NLP](keyword) của [ICML](conference) [2019](year) với
-- Cho anh xin vài paper về [text summarization](keyword) của [SIGCOMM](conference) [2019](year) với
-- Cho anh xin vài paper về [text detection](keyword) của [CHI](conference) [2017](year) với
-- Cho anh xin vài paper về [text detect](keyword) của [EMNLP](conference) [2019](year) với
-- Paper [face detection](keyword) thuộc [AAAI](conference) [2018](year)
-- Paper [face detect](keyword) thuộc [ICASSP](conference) [2018](year)
-- Tìm giúp anh paper [text generation](keyword) của [ACL](conference) [2020](year) với em
-- Tìm giúp anh paper [text recognition](keyword) của [ACL](conference) [2019](year) với em
-- Tìm giúp anh paper [face recognition](keyword) của [IEEE](conference) [2020](year) với em
-- Tìm giúp anh paper [instance segmentation](keyword) của [SP](conference) [2020](year) với em
-- Tìm giúp anh paper [instance segmentat](keyword) của [INFOCOM](conference) [2020](year) với em
-- search giúp anh vài paper về [colorize grayscale image](keyword) thuộc [AAAI](conference) [năm nay](year) với
-- search giúp anh vài paper về [OCR]](keyword) thuộc [ECCV]](conference) [2018](year) với
-- search giúp anh vài paper về [secmantation](keyword) thuộc [VLDB](conference) [năm nay](year) với
-- search giúp anh vài paper về [colorize grayscale image](keyword) thuộc [ICSE](conference) [2016](year) với
+- [CVPR](conference) [năm nay](year) có paper nào về [image classify](topic) không?
+- [USENIX Security](conference) [năm nay](year) có paper nào về [image classification](topic) không em
+- [CCS](conference) [năm nay](year) có paper nào về [text classification](topic) không em
+- [ACL](conference) [năm nay](year) có paper nào về [text classify](topic) không em
+- Những paper về [object detection](topic) trong [ICRA](conference) [năm nay](year)
+- Những paper về [object detect](topic) trong [ICCV](conference) [năm nay](year)
+- Những paper về [semantic segmentation](topic) trong [SIGKDD](conference) [năm nay](year)
+- Những paper về [semantic segment](topic) trong [NIPS](conference) [năm nay](year)
+- [AAAI](conference) có paper nào hay về [GAN](topic) không em
+- Cho anh xin vài paper về [NLP](topic) của [ICML](conference) [2019](year) với
+- Cho anh xin vài paper về [text summarization](topic) của [SIGCOMM](conference) [2019](year) với
+- Cho anh xin vài paper về [text detection](topic) của [CHI](conference) [2017](year) với
+- Cho anh xin vài paper về [text detect](topic) của [EMNLP](conference) [2019](year) với
+- Paper [face detection](topic) thuộc [AAAI](conference) [2018](year)
+- Paper [face detect](topic) thuộc [ICASSP](conference) [2018](year)
+- Tìm giúp anh paper [text generation](topic) của [ACL](conference) [2020](year) với em
+- Tìm giúp anh paper [text recognition](topic) của [ACL](conference) [năm ngoái](year) với em
+- Tìm giúp anh paper [face recognition](topic) của [IEEE](conference) [2020](year) với em
+- Tìm giúp anh paper [instance segmentation](topic) của [SP](conference) [2020](year) với em
+- Tìm giúp anh paper [instance segmentat](topic) của [INFOCOM](conference) [2020](year) với em
+- search giúp anh vài paper về [colorize grayscale image](topic) thuộc [AAAI](conference) [năm nay](year) với
+- search giúp anh vài paper về [OCR]](topic) thuộc [ECCV]](conference) [năm kia](year) với
+- search giúp anh vài paper về [secmantation](topic) thuộc [VLDB](conference) [năm nay](year) với
+- search giúp anh vài paper về [colorize grayscale image](topic) thuộc [ICSE](conference) [2016](year) với
 
 ## intent:ask_trending1
 - Đang có hot không em?
@@ -166,3 +151,71 @@
 - paperwithcode có gì thú vị không em
 - paperwithcode có gì hay ho không em 
 - paperwithcode có gì mới không em
+
+## intent:ask_competition
+- có cuộc thi nào đang diễn ra không em
+- sắp tới có cuộc thi nào diễn ra không em
+- sắp tới có cuộc thi nào hay không
+- sắp có cuộc thi nào thú vị không em
+- sắp có cuộc thi nào hot không?
+- đang có cuộc thi nào hot
+- đanng có cuộc thi nào diễn ra vậy em?
+- chỉ anh mấy cuộc thi hay sắp diễn ra
+- có cuộc thi nào nhiều tiền thưởng không em
+- có cuộc thi nào giải thưởng nghìn đô không em
+- có cuộc thi nào giải thưởng triệu đô không
+- cho anh xin tên các cuộc thi đang diễn ra
+- cho anh xin tên các cuộc thi sắp diễn ra
+- cuộc thi đang diễn ra
+- cuộc thi sắp diễn ra
+- tên các cuộc thi
+- các cuộc thi hot
+- dạo này mọi người hay tham gia cuộc thi gì vậy em
+- cuộc thi được nhiều người quan tâm
+- tên các cuộc thi được nhiều người quan tâm
+- mọi người đang quan tâm cuộc thi nào
+
+## intent:ask_conference
+- cho anh xin danh sách các hội thảo [năm nay](time) với
+- cho anh xin danh sách các hội thảo [sắp tới](time)
+- cho anh xin danh sách các hội thảo [chưa diễn ra](time)
+- cho anh xin danh sách các hội thảo [sắp diễn ra](time)
+- [sắp tới](time) có hội thảo nào diễn ra không em
+- còn những hội thảo nào [chưa diễn ra](time) em nhỉ
+- [sắp tới](time) có những hội thảo nào
+- danh sách các hội thảo [sắp tới](time)
+- danh sách các hội thảo [sắp diễn ra](time)
+- danh sách các hội thảo [chuẩn bị diễn ra](time)
+- [năm nay](time) có những hội thảo nào
+- danh sách những hội thảo [năm nay](time)
+- danh sách các hội thảo [chưa diễn ra](time)
+- danh sách các hội thảo quan trọng [năm nay](time)
+- danh sách các hội thảo
+- các hội thảo
+
+## intent:suggest_medium
+- Medium có bài gì hay không em
+- medium có bài nào hay không em
+- có bài nào thú vị trên medium em nhỉ
+- Medium dạo này có bài nào hot không em
+- Medium dạo này có bài nào thú vị vậy
+- các bài viết được nhiều nguời quan tâm trên medium
+- các bài viết hay trên medium
+- các bài viết hot trên medium
+- các bài viết thú vị trên medium
+- tìm giúp anh mấy bài hay trên medium với
+- tìm giúp anh mấy bài thú vị trên medium
+- tìm giúp anh mấy bài hot trên medium
+- search giúp anh vài bài hay trên medium với em
+- search giúp anh vài bài thú vị trên medium với
+- mọi người đang quan tâm bài gì trên medium
+- những bài viết đang được mọi người quan tâm trên medium
+- mọi người đang quan tâm những bài nào trên medium vậy em
+- những bài viết hay trên medium
+- những bài viết thú vị trên medium
+
+## lookup:topic
+data/lookup_tables/topic.txt
+
+## lookup:conference
+data/lookup_tables/conference.txt

@@ -11,55 +11,33 @@ from datetime import datetime
 class ActionCoreValues(Action):
 
     def name(self) -> Text:
-        return "action_ask_paper3"
+        return "action_ask_paper"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # Trả về các paper cần tìm theo hội nghị và năm
-        keyword = tracker.get_slot("keyword")
-        conference = tracker.get_slot("conference")
-        year = tracker.get_slot("year")
-        if year == "năm nay":
-            x = datetime.now()
-            year = x.strftime("%Y")
-        dispatcher.utter_message("keyword, conference, year: {}, {}, {}".format(keyword, conference, year))
-
-        # Code xử lý trả về kết quả
         
-
-class ActionCoreValues(Action):
-
-    def name(self) -> Text:
-        return "action_ask_paper2"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # Trả về các paper theo hội nghị và năm
+        topic = tracker.get_slot("topic")
         conference = tracker.get_slot("conference")
         year = tracker.get_slot("year")
         if year == "năm nay":
             x = datetime.now()
             year = x.strftime("%Y")
-        dispatcher.utter_message("conference, year: {}, {}".format(conference, year)) # Trả về kết quả cho user
+        elif year == "năm ngoái":
+            x = datetime.now()
+            year = x.strftime("%Y")
+            year = int(year)
+            year = str(year - 1)
+        elif year == "năm kia":
+            x = datetime.now()
+            year = x.strftime("%Y")
+            year = int(year)
+            year = str(year - 2)
+        dispatcher.utter_message("topic, conference, year: {}, {}, {}".format(topic, conference, year))
 
         # Code xử lý trả về kết quả
-
-
-class ActionCoreValues(Action):
-
-    def name(self) -> Text:
-        return "action_ask_paper1"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # Trả về các paper theo yêu cầu
-        keyword = tracker.get_slot("keyword")
-        dispatcher.utter_message("keyword: {}".format(keyword))
-
-        # Code xử lý trả về kết quả
+        AllSlotsReset()
+        
 
 class ActionCoreValues(Action):
 
@@ -87,7 +65,8 @@ class ActionCoreValues(Action):
         # Trả về 10 trending trên github
         daily = ["hiện nay", "hiện giờ", "hôm nay", "dạo này", "gần đây"]
         since = tracker.get_slot("time")
-        since = since.lower()
+        if since is not None:
+            since = since.lower()
         if since in daily:
             since = "daily"
         elif since == "tuần này":
@@ -110,5 +89,51 @@ class ActionCoreValues(Action):
         # Trả về 10 trending trên trang paperwithcode. URL trending trên paperwithcode là mặc định
         url = "https://paperswithcode.com/"
         dispatcher.utter_message("Trending trên trang paperwithcode là: {}".format(url))
+
+        # Code xử lý trả về kết quả
+
+class ActionCoreValues(Action):
+
+    def name(self) -> Text:
+        return "action_ask_competition"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Trả về các cuộc thi đang hoặc sắp diễn ra trên kaggle
+        url = "https://www.kaggle.com/competitions"
+        dispatcher.utter_message("Các cuộc thi đang diễn ra trên kaggle là: {}".format(url))
+
+        # Code xử lý trả về kết quả
+
+class ActionCoreValues(Action):
+
+    def name(self) -> Text:
+        return "action_ask_conference"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Trả về danh sách các hội thảo theo yêu cầu. Nếu không nói cụ thể sẽ trả về hết các hội thỏa trong năm
+        time = tracker.get_slot("time")
+        if time is None:
+            time = "năm nay"
+        url = "http://www.guide2research.com/topconf/"
+        dispatcher.utter_message("Các hội thảo năm nay là: {}".format(url))
+
+        # Code xử lý trả về kết quả
+
+
+class ActionCoreValues(Action):
+
+    def name(self) -> Text:
+        return "action_suggest_medium"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Trả về các bài viết hay trên medium
+        url = "https://medium.com/search?q=machine%20learning"
+        dispatcher.utter_message("Những bài viết hay trên medium là: {}".format(url))
 
         # Code xử lý trả về kết quả

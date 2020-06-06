@@ -2,23 +2,24 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- ask_paper1
-- ask_paper2
-- ask_paper3
+- ask_paper
 - ask_trending1
 - ask_trending2
 - ask_trending3
+- ask_competition
+- ask_conference
+- suggest_medium
 entities:
-- keyword
+- topic
 - conference
 - year
 - time
 slots:
   conference:
     type: unfeaturized
-  keyword:
-    type: unfeaturized
   time:
+    type: unfeaturized
+  topic:
     type: unfeaturized
   year:
     type: unfeaturized
@@ -27,9 +28,10 @@ responses:
   - text: Xin lỗi, em chưa được training để trả lời câu hỏi này ạ :((
 actions:
 - utter_fallback
-- action_ask_paper1
-- action_ask_paper2
-- action_ask_paper3
+- action_ask_paper
 - action_ask_trending1
 - action_ask_trending2
 - action_ask_trending3
+- action_ask_competition
+- action_ask_conference
+- action_suggest_medium

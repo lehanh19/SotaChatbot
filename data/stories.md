@@ -1,14 +1,6 @@
-## ask paper by keyword
-* ask_paper1
-  - action_ask_paper1
-
-## ask paper by conference
-* ask_paper2
-  - action_ask_paper2
-
-## ask paper by conference + keyword
-* ask_paper3
-  - action_ask_paper3
+## ask paper
+* ask_paper
+  - action_ask_paper
 
 ## ask trending general
 * ask_trending1
@@ -21,3 +13,15 @@
 ## ask trending paperwithcode
 * ask_trending3
   - action_ask_trending3
+
+## ask about competition
+* ask_competition
+  - action_ask_competition
+
+## ask about conference
+* ask_conference
+  - action_ask_conference
+
+## suggest medium
+* suggest_medium
+  - action_suggest_medium
