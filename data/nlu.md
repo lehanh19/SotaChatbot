@@ -6,6 +6,7 @@
 - paper [face recognition](topic)
 - paper [text recognition](topic)
 - paper [GAN](topic)
+- [Bert](topic)
 - Tìm cho anh mấy paper mới về [text classification](topic) đi
 - có paper nào hay về [image classification](topic) không em
 - Có paper nào mới về [instance segment](topic) không em?
@@ -25,6 +26,7 @@
 - Những paper thuộc [SP](conference) [2019](year) đi em
 - Paper [IEEE](conference) [2020](year)
 - Paper [EMNLP](conference) [2020](year)
+- paper thuộc hội thảo [AAAI](conference) [năm nay](year)
 - Tìm giúp anh những paper thuộc [ICML](conference) [2018](year) với
 - Tìm giúp anh những paper thuộc [SIGCOMM](conference) [năm kia](year) với
 - Cho anh xin vài paper thuộc [NIPS](conference) [2017](year) nào
@@ -39,6 +41,7 @@
 - [USENIX Security](conference) [năm nay](year) có paper nào về [image classification](topic) không em
 - [CCS](conference) [năm nay](year) có paper nào về [text classification](topic) không em
 - [ACL](conference) [năm nay](year) có paper nào về [text classify](topic) không em
+- [AAAI](conference) [2020](year)
 - Những paper về [object detection](topic) trong [ICRA](conference) [năm nay](year)
 - Những paper về [object detect](topic) trong [ICCV](conference) [năm nay](year)
 - Những paper về [semantic segmentation](topic) trong [SIGKDD](conference) [năm nay](year)
@@ -59,6 +62,8 @@
 - search giúp anh vài paper về [OCR]](topic) thuộc [ECCV]](conference) [năm kia](year) với
 - search giúp anh vài paper về [secmantation](topic) thuộc [VLDB](conference) [năm nay](year) với
 - search giúp anh vài paper về [colorize grayscale image](topic) thuộc [ICSE](conference) [2016](year) với
+- [image classification](topic) thuộc [ECCV](conference) [2019](year)
+- [bert](topic) [OCR](conference) [2018](year)
 
 ## intent:ask_trending1
 - Đang có hot không em?

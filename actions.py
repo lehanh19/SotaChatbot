@@ -7,6 +7,9 @@ from rasa_sdk.events import SlotSet, FollowupAction
 from rasa_sdk.events import AllSlotsReset
 
 from datetime import datetime
+import test
+import time
+from env.Crawl_paper import beautiful_4
 
 class ActionCoreValues(Action):
 
@@ -33,9 +36,16 @@ class ActionCoreValues(Action):
             year = x.strftime("%Y")
             year = int(year)
             year = str(year - 2)
-        dispatcher.utter_message("topic, conference, year: {}, {}, {}".format(topic, conference, year))
+        
+        dispatcher.utter_message("Em đang tìm kiếm câu trả lời phù hợp nhất. Anh (chị) đợi em một lát ạ ^-^")
 
-        # Code xử lý trả về kết quả
+        url = beautiful_4.CreateURl(conference, topic, year)
+        ans = beautiful_4.CrawlPaper(10, url)
+        time.sleep(5)
+        
+        for s in ans:
+            dispatcher.utter_message(s)
+    
         AllSlotsReset()
         
 
