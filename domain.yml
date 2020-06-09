@@ -10,10 +10,10 @@ intents:
 - ask_conference
 - suggest_medium
 entities:
-- topic
 - conference
-- year
 - time
+- topic
+- year
 slots:
   conference:
     type: unfeaturized
@@ -27,11 +27,11 @@ responses:
   utter_fallback:
   - text: Xin lỗi, em chưa được training để trả lời câu hỏi này ạ :((
 actions:
-- utter_fallback
+- action_ask_competition
+- action_ask_conference
 - action_ask_paper
 - action_ask_trending1
 - action_ask_trending2
 - action_ask_trending3
-- action_ask_competition
-- action_ask_conference
 - action_suggest_medium
+- utter_fallback

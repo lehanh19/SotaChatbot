@@ -25,3 +25,9 @@
 ## suggest medium
 * suggest_medium
   - action_suggest_medium
+## interactive_story_1
+* ask_paper{"topic": "image classification", "conference": "CVCR", "year": "2019"}
+    - slot{"conference": "CVCR"}
+    - slot{"topic": "image classification"}
+    - slot{"year": "2019"}
+    - action_ask_paper

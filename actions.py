@@ -111,7 +111,7 @@ class ActionAskTrending3(Action):
         # Trả về 10 trending trên trang paperwithcode. URL trending trên paperwithcode là mặc định
         url = "https://paperswithcode.com/search?q_meta=&q=trending"
 
-        ans = "Trending trên trang paperwithcode là: \n"
+        ans = "Dạ, trending trên trang paperwithcode là: \n"
         trend = beautiful_4.Trending_paperwithcode(url, 10)
         ans += trend
         dispatcher.utter_message(ans)

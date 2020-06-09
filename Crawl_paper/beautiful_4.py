@@ -50,7 +50,7 @@ def CrawlPaper(num_of_paper=None, url=None):
     for index, paper in enumerate(all_paper):
         if index >= maxsize:
             return ans
-        s = "Câu trả lời số " + str(index + 1) + " :" + paper.find('p', {"class": "title is-5 mathjax"}).text.replace("\n", "").strip() + "\n"
+        s = "Câu trả lời số " + str(index + 1) + ": " + paper.find('p', {"class": "title is-5 mathjax"}).text.replace("\n", "").strip() + "\n"
         s += paper.find('p', {"class": "authors"}).text.replace("\n", "").strip() + "\n"
         s += paper.find('p', {"class": "abstract mathjax"}).text.replace("\n", "").replace(" △ Less","").replace(" ▽ More ","").strip() + "\n"
         

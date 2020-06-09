@@ -65,6 +65,7 @@
 - [image classification](topic) thuộc [ECCV](conference) [2019](year)
 - [bert](topic) [OCR](conference) [2018](year)
 - Cho anh xin paper về [Tranformer](topic) thuộc hội thảo [VLDB](conference) [năm nay](year) với
+- search giúp anh paper về [image classification](topic) thuộc [CVCR](conference) [2019](year)
 
 ## intent:ask_trending1
 - Đang có hot không em?
@@ -79,7 +80,6 @@
 - Tuần này có gì mới không em
 - tuần này có gì hay không em
 - Đang có trend gì vậy em
-- đang có trending gì vậy em
 - Cho anh xin trending tuần này với
 - Hot nhất hôm nay là gì
 - Trending hôm nay là gì
@@ -87,7 +87,6 @@
 - trend tuần này là gì
 - Trending tuần này
 - show anh mấy trend hiện nay đi
-- đang có gì hot vậy em
 - hôm nay có gì mới không em
 - hôm nay có gì hay không em
 - hôm nay có gì hot không em
@@ -160,7 +159,7 @@
 - hiện tại paperwithcode có gì thú vị nhỉ
 - search cho anh vài cái thú vị trên paperwithcode
 - paperwithcode có gì thú vị không em
-- paperwithcode có gì hay ho không em 
+- paperwithcode có gì hay ho không em
 - paperwithcode có gì mới không em
 - Trending Paperwithcode
 - trending paperwithcode
@@ -239,7 +238,7 @@
 - những bài viết thú vị trên medium
 
 ## lookup:topic
-data/lookup_tables/topic.txt
+  data/lookup_tables/topic.txt
 
 ## lookup:conference
-data/lookup_tables/conference.txt
+  data/lookup_tables/conference.txt
