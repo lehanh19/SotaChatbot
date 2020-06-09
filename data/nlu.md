@@ -64,6 +64,7 @@
 - search giúp anh vài paper về [colorize grayscale image](topic) thuộc [ICSE](conference) [2016](year) với
 - [image classification](topic) thuộc [ECCV](conference) [2019](year)
 - [bert](topic) [OCR](conference) [2018](year)
+- Cho anh xin paper về [Tranformer](topic) thuộc hội thảo [VLDB](conference) [năm nay](year) với
 
 ## intent:ask_trending1
 - Đang có hot không em?
@@ -133,6 +134,11 @@
 - cho anh xin mấy trend github [hiện giờ](time) với
 - cho anh xin mấy trending github [hiện nay](time) với
 - cho anh xin mấy trend github [hiện nay](time) với
+- trending github
+- Trending Github
+- trending Github
+- trend github
+- Trend Github
 
 ## intent:ask_trending3
 - Paperwithcode đang trend gì nhỉ?
@@ -156,6 +162,10 @@
 - paperwithcode có gì thú vị không em
 - paperwithcode có gì hay ho không em 
 - paperwithcode có gì mới không em
+- Trending Paperwithcode
+- trending paperwithcode
+- trend paperwithcode
+- Trend Paperwithcode
 
 ## intent:ask_competition
 - có cuộc thi nào đang diễn ra không em
@@ -179,6 +189,10 @@
 - cuộc thi được nhiều người quan tâm
 - tên các cuộc thi được nhiều người quan tâm
 - mọi người đang quan tâm cuộc thi nào
+- danh sách cuộc thi
+- danh sách các cuộc thi
+- danh sách các cuộc thi đang diễn ra trên Kaggle
+- danh sách các cuộc thi đang diễn ra
 
 ## intent:ask_conference
 - cho anh xin danh sách các hội thảo [năm nay](time) với
@@ -197,6 +211,11 @@
 - danh sách các hội thảo quan trọng [năm nay](time)
 - danh sách các hội thảo
 - các hội thảo
+- danh sách top hội thảo
+- danh sách các hội thảo lớn
+- hội thảo nào đang diễn ra
+- hội thảo nào sắp diễn ra
+- hội thảo nào chưa diễn ra
 
 ## intent:suggest_medium
 - Medium có bài gì hay không em

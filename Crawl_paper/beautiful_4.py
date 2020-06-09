@@ -13,6 +13,10 @@ def CreateURl(Conference="", Keywork="", Year=None):
         Year = str(Year)
     else:
         Year = ""
+    if Conference is None:
+        Conference = ""
+    if Keywork is None:
+        Keywork = ""
     Conference = Conference.strip()
     Keywork = Keywork.strip()
     Year = Year.strip()
@@ -27,16 +31,17 @@ def CreateURl(Conference="", Keywork="", Year=None):
 
 
 def CrawlPaper(num_of_paper=None, url=None):
+    ans = []
     try:
         r = requests.get(url)
         soup = BeautifulSoup(r.text,'lxml')
     except OSError:
-        print('cannot open your requests URL, maybe something wrong. Please check again !')
-        return
+        ans.append('cannot open your requests URL, maybe something wrong. Please check again !')
+        return ans
     all_paper = soup.find_all("li", {"class": "arxiv-result"})
     if len(all_paper) is 0:
-        print("Sorry!. Your query has no results.")
-        return
+        ans.append("Sorry!. Your query has no results.")
+        return ans
     maxsize = len(all_paper)
     if num_of_paper != None:
         maxsize = min(int(num_of_paper),maxsize)
@@ -44,18 +49,19 @@ def CrawlPaper(num_of_paper=None, url=None):
 
     for index, paper in enumerate(all_paper):
         if index >= maxsize:
-            return
-        print("{} Title: {}".format(index + 1,
-                                    paper.find('p', {"class": "title is-5 mathjax"}).text.replace("\n", "").strip()))
-        print(paper.find('p', {"class": "authors"}).text.replace("\n", "").strip())
-        print(paper.find('p', {"class": "abstract mathjax"}).text.replace("\n", "").replace(" △ Less","").replace("▽ More ","").strip())
+            return ans
+        s = "Câu trả lời số " + str(index + 1) + " :" + paper.find('p', {"class": "title is-5 mathjax"}).text.replace("\n", "").strip() + "\n"
+        s += paper.find('p', {"class": "authors"}).text.replace("\n", "").strip() + "\n"
+        s += paper.find('p', {"class": "abstract mathjax"}).text.replace("\n", "").replace(" △ Less","").replace(" ▽ More ","").strip() + "\n"
+        
         for link in paper.find_all("a"):
             if link.get('href'):
                 if link['href'].split('/')[-2] == 'pdf':
-                    print("link paper: {} ".format(link['href']))
+                    s += "Link paper: " + link['href'] + "\n"  
                 if link['href'].split("/")[-2] == 'abs':
-                    print("link Summary paper: {}".format(link['href']))
-        print("======================================================================================")
+                    s += "Link Summary paper: " + link['href'] + "\n"
+        ans.append(s)
+    return ans
 
 def Trending_github(url=None, number_of_trend=None):
     """ crawl data in github.com/trending """
@@ -78,7 +84,7 @@ def Trending_github(url=None, number_of_trend=None):
         suffix_link = trend.find('h1', {"class": "h3 lh-condensed"}).a.get("href").strip()
         result = origin_link + suffix_link
         decription = str(index + 1) + ". " + trend.find("p", {"class": "col-9 text-gray my-1 pr-4"}).text.strip()
-        s += "\n" + decription + "\n" + result + "\n" + " ====================================== "
+        s += "\n" + decription + "\n" + result + "\n" + " ======================== "
 # this function return list of row, every single row must print in one line.
     return s
 
@@ -97,7 +103,7 @@ def Trending_paperwithcode(url=None, number_of_trending=None):
     list_trend = soup.find_all('div', {"class": "row infinite-item item"})
     if number_of_trending is not None:
         number_of_trending = min(number_of_trending, len(list_trend))
-    print(number_of_trending)
+    
     for index, trend in enumerate(list_trend):
         if index == number_of_trending:
             break
@@ -133,7 +139,7 @@ def crawl_conference(url=None, number_of_conference=None):
         text = str(index + 1) + ". " + value.table.tr.find_all('a')[0].text.strip()
         link_conference = value.table.find_all('a', {"target": "_blank"})[0]['href'].strip()
 
-        result += text + "\n" + "link summary conference: " + link_summary + "\n" + "link conference:         " + link_conference + '\n' + "=====================================" + "\n"
+        result += text + "\n" + "link summary conference: " + link_summary + "\n" + "link conference:         " + link_conference + "\n"
     return result
 
 def _main_(args):

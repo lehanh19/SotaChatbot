@@ -9,9 +9,9 @@ from rasa_sdk.events import AllSlotsReset
 from datetime import datetime
 import test
 import time
-from env.Crawl_paper import beautiful_4
+from Crawl_paper import beautiful_4
 
-class ActionCoreValues(Action):
+class ActionAskPaper(Action):
 
     def name(self) -> Text:
         return "action_ask_paper"
@@ -49,7 +49,7 @@ class ActionCoreValues(Action):
         AllSlotsReset()
         
 
-class ActionCoreValues(Action):
+class ActionAskTrending1(Action):
 
     def name(self) -> Text:
         return "action_ask_trending1"
@@ -59,12 +59,20 @@ class ActionCoreValues(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Trả về trending, lấy 5 trending trên trang github và 5 trending trên trang paperwithcode. Mặc định trend github lấy language = python, since=daily
         url_github = "https://github.com/trending/python?since=daily"
-        url_paperwithcode = "https://paperswithcode.com/"
-        dispatcher.utter_message("Trending hiện nay là:")
+        url_paperwithcode = "https://paperswithcode.com/search?q_meta=&q=trending"
+        dispatcher.utter_message("Dạ em đang tìm kiếm top trending trên trang GitHub và trang Paperwithcode, anh (chị) vui lòng đợi trong giây lát ạ.")
 
         # Code xử lý trả về kết quả
+        ans_git = beautiful_4.Trending_github(url_github, 5)
+        ans_paper = beautiful_4.Trending_paperwithcode(url_paperwithcode, 5)
+        ans1 = "Trending trên trang GitHub là:" + "\n" + ans_git
+        ans2 = "Trending trên trang Paperwithcode là:" + "\n" + ans_paper
+        dispatcher.utter_message(ans1)
+        dispatcher.utter_message(ans2)
 
-class ActionCoreValues(Action):
+        AllSlotsReset()
+
+class ActionAskTrending2(Action):
 
     def name(self) -> Text:
         return "action_ask_trending2"
@@ -75,8 +83,10 @@ class ActionCoreValues(Action):
         # Trả về 10 trending trên github
         daily = ["hiện nay", "hiện giờ", "hôm nay", "dạo này", "gần đây"]
         since = tracker.get_slot("time")
-        if since is not None:
-            since = since.lower()
+        if since is None:
+            since = "hôm nay"
+        ans = "Dạ trending trên github " + since + " là: \n"
+        since = since.lower()
         if since in daily:
             since = "daily"
         elif since == "tuần này":
@@ -84,11 +94,13 @@ class ActionCoreValues(Action):
         else:
             since = "monthly"
         url = "https://github.com/trending/python?since=" + since
-        dispatcher.utter_message("url trả về là: {}".format(url))
+        trend = beautiful_4.Trending_github(url, 10)
+        ans += trend
+        dispatcher.utter_message(ans)
 
-        # Code xử lý trả về kết quả
+        AllSlotsReset()
 
-class ActionCoreValues(Action):
+class ActionAskTrending3(Action):
 
     def name(self) -> Text:
         return "action_ask_trending3"
@@ -97,12 +109,16 @@ class ActionCoreValues(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Trả về 10 trending trên trang paperwithcode. URL trending trên paperwithcode là mặc định
-        url = "https://paperswithcode.com/"
-        dispatcher.utter_message("Trending trên trang paperwithcode là: {}".format(url))
+        url = "https://paperswithcode.com/search?q_meta=&q=trending"
 
-        # Code xử lý trả về kết quả
+        ans = "Trending trên trang paperwithcode là: \n"
+        trend = beautiful_4.Trending_paperwithcode(url, 10)
+        ans += trend
+        dispatcher.utter_message(ans)
+        AllSlotsReset()
 
-class ActionCoreValues(Action):
+       
+class ActionAskCompetiton(Action):
 
     def name(self) -> Text:
         return "action_ask_competition"
@@ -116,7 +132,7 @@ class ActionCoreValues(Action):
 
         # Code xử lý trả về kết quả
 
-class ActionCoreValues(Action):
+class ActionAskConference(Action):
 
     def name(self) -> Text:
         return "action_ask_conference"
@@ -129,12 +145,15 @@ class ActionCoreValues(Action):
         if time is None:
             time = "năm nay"
         url = "http://www.guide2research.com/topconf/"
-        dispatcher.utter_message("Các hội thảo năm nay là: {}".format(url))
+        ans = "Dạ các hội thảo " + time + " là: \n"
+        conferences = beautiful_4.crawl_conference(url, 20)
+        ans += conferences
+        dispatcher.utter_message(ans)
 
-        # Code xử lý trả về kết quả
+        AllSlotsReset()
 
 
-class ActionCoreValues(Action):
+class ActionSuggestMedium(Action):
 
     def name(self) -> Text:
         return "action_suggest_medium"
