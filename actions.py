@@ -10,6 +10,17 @@ from datetime import datetime
 import test
 import time
 from Crawl_paper import beautiful_4
+from functools import lru_cache
+import lxml
+from lxml import html
+import xml.etree.cElementTree as etree
+
+
+@lru_cache(maxsize=64)
+def get_papers(conference, topic, year):
+    url = beautiful_4.CreateURl(conference, topic, year, number_of_paper=5)
+    ans = beautiful_4.CrawlPaper(url)
+    return ans
 
 class ActionAskPaper(Action):
 
@@ -36,18 +47,24 @@ class ActionAskPaper(Action):
             year = x.strftime("%Y")
             year = int(year)
             year = str(year - 2)
-        
+
         dispatcher.utter_message("Em đang tìm kiếm câu trả lời phù hợp nhất. Anh (chị) đợi em một lát ạ ^-^")
 
+<<<<<<< HEAD
         print("ahihi")
         url = beautiful_4.CreateURl(conference, topic, year)
         ans = beautiful_4.CrawlPaper(10, url)
         time.sleep(5)
+=======
+        ans = get_papers(conference, topic, year)
+        # print(ans)
+        # time.sleep(5)
+>>>>>>> 48b2a6674c2f0e450d7ded14120219863fb8cb63
         
         for s in ans:
             dispatcher.utter_message(s)
     
-        AllSlotsReset()
+        return [AllSlotsReset()]
         
 
 class ActionAskTrending1(Action):
@@ -71,7 +88,7 @@ class ActionAskTrending1(Action):
         dispatcher.utter_message(ans1)
         dispatcher.utter_message(ans2)
 
-        AllSlotsReset()
+        return [AllSlotsReset()]
 
 class ActionAskTrending2(Action):
 
@@ -99,7 +116,7 @@ class ActionAskTrending2(Action):
         ans += trend
         dispatcher.utter_message(ans)
 
-        AllSlotsReset()
+        return [AllSlotsReset()]
 
 class ActionAskTrending3(Action):
 
