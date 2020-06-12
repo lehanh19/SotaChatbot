@@ -66,6 +66,7 @@
 - [bert](topic) [OCR](conference) [2018](year)
 - Cho anh xin paper về [Tranformer](topic) thuộc hội thảo [VLDB](conference) [năm nay](year) với
 - search giúp anh paper về [image classification](topic) thuộc [CVCR](conference) [2019](year)
+- [CVPR](conference)
 
 ## intent:ask_trending1
 - Đang có hot không em?

@@ -39,6 +39,7 @@ class ActionAskPaper(Action):
         
         dispatcher.utter_message("Em đang tìm kiếm câu trả lời phù hợp nhất. Anh (chị) đợi em một lát ạ ^-^")
 
+        print("ahihi")
         url = beautiful_4.CreateURl(conference, topic, year)
         ans = beautiful_4.CrawlPaper(10, url)
         time.sleep(5)

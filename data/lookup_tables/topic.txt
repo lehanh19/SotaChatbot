@@ -53,3 +53,177 @@ Natural Language Inference
 NLI
 Information Retrieval
 Relation Extraction
+text-to-speech
+Text-To-Speech Synthesis
+Named Entity Recognition
+Reading Comprehension
+Image Captioning
+Semantic Textual Similarity
+Dialogue
+Dependency Parsing
+Emotion Recognition
+Sentence Embeddings
+Sentence Pair Modeling
+Part-Of-Speech Tagging
+Semantic Parsing
+Topic Models
+Coreference Resolution
+Semantic Role Labeling
+3D Absolute Human Pose Estimation
+Entity Linking
+Relational Reasoning
+Cross-Lingual
+Question Generation
+Data Mining
+Word Sense Disambiguation
+Relation Classification
+Tokenization
+Grammatical Error Correction
+Constituency Parsing
+Language Identification
+Chunking
+Morphological Analysis
+Slot Filling
+Text Matching
+Paraphrase Identification
+Fake News Detection
+Information Extraction
+Lemmatization
+Chinese
+Chatbot
+Ad-Hoc Information Retrieval
+Language Acquisition
+Open Information Extraction
+Hate Speech Detection
+Intent Detection
+Word Alignment
+Text Simplification
+Document Ranking
+Entity Disambiguation
+Stance Detection
+Sentence Summarization
+Entity Extraction
+Entity Typing
+Entity Alignment
+Graph-to-Sequence
+Intent Classification
+Conversational Response Selection
+Multi-Label Text Classification
+Amr Parsing
+Morphological Tagging
+Sarcasm Detection
+Linguistic Acceptability
+Subjectivity Analysis
+Aspect-Based Sentiment Analysis
+Nested Mention Recognition
+Word Sense Induction
+Knowledge Base Population
+Data-to-Text Generation
+Semantic Composition
+Morphological Inflection
+Lexical Simplification
+Question Similarity
+Phrase Grounding
+Keyword Extraction
+Humor Detection
+Lexical Normalization
+Bias Detection
+Entity Resolution
+Text Attribute Transfer
+Sentence Ordering
+Text Clustering
+Negation Detection
+Natural Language Transduction
+Depth Estimation
+Zero-Shot Learning
+Image Retrieval
+Object Recognition
+Anomaly Detection
+Medical Image Segmentation
+Action Localization
+Instance Segmentation
+Quantization
+Style Transfer
+Image Captioning
+Activity Recognition
+Continuous Control
+Emotion Recognition
+Gesture Recognition
+Action Detection
+Image Denoising
+Object Tracking
+Image Restoration
+Image Inpainting
+Image Reconstruction
+Self-Supervised Learning
+Scene Text
+Object Classification
+Object Localization
+Visual Tracking
+Video Classification
+Video Semantic Segmentation
+Image Enhancement
+Image Quality Assessment
+Human Interaction Recognition
+Action Classification
+Image-to-Image Translation
+Image Registration
+Scene Text Detection
+Motion Estimation
+Image Compression
+Object Reconstruction
+Colorization
+Compressive Sensing
+Edge Detection
+3D Semantic Segmentation
+Scene Classification
+Human Parsing
+Human-Object Interaction Detection
+Image Clustering
+Image Dehazing
+Visual Localization
+Face Reconstruction
+Eye Tracking
+Image Categorization
+Video Summarization
+Image Recognition
+Human Detection
+Color Constancy
+Motion Segmentation
+Texture Classification
+Object Discovery
+Scene Generation
+Visual Recognition
+Future prediction
+Image Super-Resolution
+Reconstruction
+Point Cloud Generation
+Image Cropping
+Deep Attention
+Object Counting
+Face Generation
+Sign Language Recognition
+Text Spotting
+Shadow Detection
+Image Forensics
+Cloud Detection
+Rotated MNIST
+Symmetry Detection
+Autonomous Driving
+Multi-Object Tracking
+DeepFake Detection
+Art Analysis
+Image Morphing
+Instance Search
+Human Dynamics
+3D Object Detection
+Sign Language Translation
+Face Recognition
+Animation
+Face Detection
+GAN image forensics
+Face Reenactment
+Image Stitching
+Face Verification
+Face Anonymization
+Text-To-Image
