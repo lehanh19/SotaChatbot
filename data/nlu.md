@@ -1,3 +1,116 @@
+## intent:greet
+- hê lu em
+- hey
+- hello
+- hi
+- hi bot
+- hello bot
+- hello em
+- hi em
+- chào em
+- chào bot
+- khỏe không em
+- hôm nay em thế nào
+- thời tiết hôm nay như nào
+- em ơi, cho anh hỏi
+- bot ơi
+- cho mình hỏi chút
+- chào bạn nha
+- xin chào 
+- hôm nay bạn thế nào 
+- chào bạn
+- alo alo
+- hú
+- merci
+- 123
+- abc
+- xyz
+
+## intent:ask_ability
+- nhiệm vụ của bạn là gì?
+- nhiệm vụ của em là gì?
+- mission của em là gì
+- công việc của bạn là gì?
+- em làm gì
+- em làm cái gì
+- vai trò của em là gì
+- em có giá trị gì
+- em có thể hỗ trợ gì
+- mày biết làm gì
+- nhiệm vụ của mày là gì
+- mày được tạo ra với mục đích gì
+- chức năng của bạn là gì?
+- bạn làm được gì?
+- em ở đây để làm gì
+- em được tạo ra với mục đích gì
+- em được tạo ra để làm gì
+- làm được những gì vậy em
+- công việc của em là gì
+- những việc bạn làm được
+- bạn có thể giúp gì cho tôi
+- em có tính năng gì
+- hãy nói về khả năng của em đi
+- em có thể làm những gì nhỉ
+- em có chức năng gì?
+- em giúp gì được anh không?
+- bạn có thể  làm gì?
+- em có thể giúp gì cho anh?
+- bạn biết hát không ?
+- bạn biết xem lịch học ah?
+- em biết làm gì?
+- em hỗ trợ anh như thế nào?
+- cho anh xem các chức năng của em
+- em làm được những gì
+- em biết làm gì
+
+## intent:goodbye
+- good bye
+- bye bye
+- tạm biệt em
+- tạm biệt bot nhá
+- tạm biệt bạn nha
+- bye
+- gặp sau nha
+- hẹn lần khác
+- lúc khác nói tiếp sau
+- thôi nha
+- gặp sau
+- đi đây
+
+## intent:thankyou
+- cảm ơn em nhá
+- thanks em nha
+- cảm ơn nha
+- good job
+- cảm ơn bạn nha
+- cảm ơn nhiều
+- thank you
+- cảm ơn bot nha
+- thanks bot
+- cảm ơn
+- thank you so much
+- great! Thanks
+
+## intent:praise
+- bot giỏi quá
+- great
+- awsome
+- bot làm tốt lắm
+- ui giỏi thế
+- bot thông minh
+- đẹp trai đấy
+- Ênm đệnp lắm
+
+## intent:decry
+- quá tệ
+- ngu ngốc
+- chả biết gì cả
+- ngu thật
+- dở ghê
+- có thế mà cũng không biết
+- kém cỏi
+- sai rồi, chán ghê
+
 ## intent:ask_paper
 - Cho anh vài paper về [semantic segmentation](topic) đi em
 - paper [text summarization](topic)
@@ -193,6 +306,10 @@
 - danh sách các cuộc thi
 - danh sách các cuộc thi đang diễn ra trên Kaggle
 - danh sách các cuộc thi đang diễn ra
+- competitions
+- competition
+- danh sách competition sắp diễn ra
+- danh sách competiton đang diễn ra
 
 ## intent:ask_conference
 - cho anh xin danh sách các hội thảo [năm nay](time) với
@@ -216,6 +333,17 @@
 - hội thảo nào đang diễn ra
 - hội thảo nào sắp diễn ra
 - hội thảo nào chưa diễn ra
+- danh sách conference
+- conference
+- conference sắp tới
+- conference đang diễn ra
+- top conference
+- danh sách conference đang diễn ra
+- danh sách conference sắp diễn ra
+- danh sách conference chưa diễn ra
+- top conference đang diễn ra
+- top conference sắp diễn ra
+- hội thảo
 
 ## intent:suggest_medium
 - Medium có bài gì hay không em

@@ -2,6 +2,12 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- greet
+- ask_ability
+- goodbye
+- thankyou
+- praise
+- decry
 - ask_paper
 - ask_trending1
 - ask_trending2
@@ -26,6 +32,18 @@ slots:
 responses:
   utter_fallback:
   - text: Xin lỗi, em chưa được training để trả lời câu hỏi này ạ :((
+  utter_greet:
+  - text: Em chào anh chị ạ. Em có có thể giúp gì cho anh chị ạ?
+  utter_goodbye:
+  - text: Hẹn gặp lại anh chị ^-^
+  utter_noworries:
+  - text: Hihi em luôn sẵn lòng giúp đỡ anh chị mỗi khi anh chị cần ạ.
+  utter_show_ability:
+  - text: Dạ, em có thể giúp anh chị search paper, cập nhật các trending, tìm hiểu về các hội thảo và các cuộc thi ạ.
+  utter_happy:
+  - text: Hihi cảm ơn anh chị đã khen ạ.
+  utter_sorry:
+  - text: Xin lỗi vì em chưa đủ thông minh ạ :((
 actions:
 - action_ask_competition
 - action_ask_conference
@@ -35,3 +53,9 @@ actions:
 - action_ask_trending3
 - action_suggest_medium
 - utter_fallback
+- utter_greet
+- utter_goodbye
+- utter_noworries
+- utter_show_ability
+- utter_happy
+- utter_sorry

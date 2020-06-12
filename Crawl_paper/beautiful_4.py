@@ -13,7 +13,7 @@ def CreateURl(Conference=None, Keywork=None, Year=2020, number_of_paper=5):
     urlparser_last = '&start=0&max_results=' + str(number_of_paper)
 
     if Keywork is None:
-        return None
+        Keywork = ""
 
     ans = Keywork.strip()
     Year = str(Year)
