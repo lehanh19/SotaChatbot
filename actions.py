@@ -52,12 +52,12 @@ class ActionAskPaper(Action):
 
         if year is None:
             year = 2020
-        ans = get_papers(conference, topic, year)
+        ans = "[info]"
+        ans += get_papers(conference, topic, year) + "[/info]"
         # print(ans)
         # time.sleep(5)
         
-        for s in ans:
-            dispatcher.utter_message(s)
+        dispatcher.utter_message(ans)
     
         return [AllSlotsReset()]
         
@@ -73,15 +73,17 @@ class ActionAskTrending1(Action):
         # Trả về trending, lấy 5 trending trên trang github và 5 trending trên trang paperwithcode. Mặc định trend github lấy language = python, since=daily
         url_github = "https://github.com/trending/python?since=daily"
         url_paperwithcode = "https://paperswithcode.com/search?q_meta=&q=trending"
-        dispatcher.utter_message("Dạ, hiện tại trên trang github và paperwithcode đang có những trend này. Anh (chị) tham khảo xem có hứng thú không ạ:")
+        ans = "Dạ, hiện tại trên trang github và paperwithcode đang có những trend này. Anh (chị) tham khảo xem có hứng thú không ạ:" + "\n"
 
         # Code xử lý trả về kết quả
         ans_git = beautiful_4.Trending_github(url_github, 5)
         ans_paper = beautiful_4.Trending_paperwithcode(url_paperwithcode, 5)
-        ans1 = "Trending GitHub:" + "\n" + ans_git
-        ans2 = "Trending Paperwithcode:" + "\n" + ans_paper
-        dispatcher.utter_message(ans1)
-        dispatcher.utter_message(ans2)
+        ans += "[info]"
+        ans += "Trending GitHub:" + "\n" + ans_git + "\n"
+        ans += "Trending Paperwithcode:" + "\n" + ans_paper + "\n"
+        ans += "[/info]"
+        
+        dispatcher.utter_message(ans)
 
         return [AllSlotsReset()]
 
@@ -108,7 +110,8 @@ class ActionAskTrending2(Action):
             since = "monthly"
         url = "https://github.com/trending/python?since=" + since
         trend = beautiful_4.Trending_github(url, 10)
-        ans += trend
+        ans += "[info]"
+        ans += trend + "[/info]"
         dispatcher.utter_message(ans)
 
         return [AllSlotsReset()]
@@ -126,7 +129,7 @@ class ActionAskTrending3(Action):
 
         ans = "Dạ, trending paperwithcode là: \n"
         trend = beautiful_4.Trending_paperwithcode(url, 10)
-        ans += trend
+        ans += "[info]" + trend + "[/info]"
         dispatcher.utter_message(ans)
         return [AllSlotsReset()]
 
@@ -143,14 +146,9 @@ class ActionAskCompetiton(Action):
 
         competitions = beautiful_4.crawl_competitions()
         ans = "Dạ! , competitions đang có là: \n "
+        ans += "[info]" + competitions + "[/info]"
         dispatcher.utter_message(ans)
-        #print(competitions)
-        dispatcher.utter_message(competitions)
-        #for info in competitions.split("\n"):
-        #    dispatcher.utter_message(info)
-        # ans +=competitions
-
-        # dispatcher.utter_message(ans)
+        
         return [AllSlotsReset()]
 
 class ActionAskConference(Action):
@@ -168,7 +166,7 @@ class ActionAskConference(Action):
         url = "http://www.guide2research.com/topconf/"
         ans = "Dạ, danh sách các hội thảo " + time + " là: \n"
         conferences = beautiful_4.crawl_conference(url, 20)
-        ans += conferences
+        ans += "[info]" + conferences + "[/info]"
         dispatcher.utter_message(ans)
 
         return [AllSlotsReset()]

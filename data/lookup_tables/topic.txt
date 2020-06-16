@@ -236,3 +236,12 @@ Face Verification
 Face Anonymization
 Text-To-Image
 text to image
+security
+computer vision
+natural language processing
+resnet
+unet
+transformer
+u-net
+deepfake
+panoptic segmentation

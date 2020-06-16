@@ -41,11 +41,12 @@ responses:
   utter_show_ability:
   - text: "Dạ, em có thể làm những công việc sau ạ:\n - Search paper: em có thể search\
       \ paper về một bài toán cụ thể , hoặc search paper của các hội thảo qua các\
-      \ năm. Có 1 lưu ý nhỏ là tên hội thảo anh chị dùng tên viết tắt và nhớ viết hoa giúp em nha.\n\
-      \ - Cập nhật các trending: em thường xuyên update các trending trên GitHub\
-      \ và Paperwithcode.\n - Tìm hiểu về các hội thảo: cập nhật danh sách các hội\
-      \ thảo đang được mọi người quan tâm.\n - Cập nhật các cuộc thi trên Kaggle ạ.\n\
-      \ - Suggest các bài viết hay về chủ đề Machine learning trên trang Medium."
+      \ năm. Có 1 lưu ý nhỏ là tên hội thảo anh chị dùng tên viết tắt và nhớ viết\
+      \ hoa giúp em nha.\n - Cập nhật các trending: em thường xuyên update các trending\
+      \ trên GitHub và Paperwithcode.\n - Tìm hiểu về các hội thảo: cập nhật danh\
+      \ sách các hội thảo đang được mọi người quan tâm.\n - Cập nhật các cuộc thi\
+      \ trên Kaggle ạ.\n - Suggest các bài viết hay về chủ đề Machine learning trên\
+      \ trang Medium."
   utter_happy:
   - text: Hihi cảm ơn anh chị đã khen ạ.
   utter_sorry:

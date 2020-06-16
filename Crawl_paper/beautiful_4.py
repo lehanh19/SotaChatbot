@@ -32,11 +32,11 @@ def CreateURl(Conference=None, Keywork=None, Year=2020, number_of_paper=5):
 
 
 def CrawlPaper(url=None):
-    ans = []
+    ans = ""
     try:
         r = requests.get(url)
     except OSError:
-        ans.append('cannot open your requests URL, maybe something wrong. Please check again !')
+        ans = "cannot open your requests URL, maybe something wrong. Please check again !"
         return ans
     envv = html.fromstring(r.content)
     link_list = envv.xpath('//link[@title="pdf"]')
@@ -44,7 +44,7 @@ def CrawlPaper(url=None):
     link_summary = envv.xpath('//entry')
 
     if min(len(link_list), len(summary)) is 0:
-        ans.append("Sorry!. Your query has no results.")
+        ans = "Sorry!. Your query has no results."
         return ans
 
     for index in range(len(summary)):
@@ -57,7 +57,7 @@ def CrawlPaper(url=None):
         s += "Link paper: " + sublink + "\n"
         s += "Link summary paper: " + sublink_summary + "\n"
         s += "========================================== \n "
-        ans.append(s)
+        ans += s
     return ans
 
 def Trending_github(url=None, number_of_trend=None):

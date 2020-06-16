@@ -25,6 +25,8 @@
 - 123
 - abc
 - xyz
+- lô
+- a lô
 
 ## intent:ask_ability
 - nhiệm vụ của bạn là gì?
@@ -180,6 +182,15 @@
 - Cho anh xin paper về [Tranformer](topic) thuộc hội thảo [VLDB](conference) [năm nay](year) với
 - search giúp anh paper về [image classification](topic) thuộc [CVCR](conference) [2019](year)
 - [CVPR](conference)
+- thế còn [text to speech](topic) thì sao
+- [text-to-speech](topic)
+- vậy [Text-To-Speech Synthesis](topic) thì sao em
+- [NIPS](conference)
+- paper về [adversarial network](topic)
+- còn [panoptic segmentation](topic) nữa em
+- thế cho anh paper về [deepfake](topic) đi
+- [deepfake](topic)
+- [u-net](topic)
 
 ## intent:ask_trending1
 - Đang có hot không em?
@@ -212,6 +223,9 @@
 - Có trend gì không em
 - Có trending gì vậy
 - Có gì mới vậy
+- gần đây đang có xu hướng nghiên cứu gì
+- gần đây mọi người đang quan tâm về vấn đề gì
+- mọi người đang quan tâm gì vậy em
 
 ## intent:ask_trending2
 - Github [hôm nay](time) có gì hot
@@ -252,6 +266,8 @@
 - trending Github
 - trend github
 - Trend Github
+- một vài repo hay trên github
+- những repo hay trên git
 
 ## intent:ask_trending3
 - Paperwithcode đang trend gì nhỉ?
@@ -279,6 +295,10 @@
 - trending paperwithcode
 - trend paperwithcode
 - Trend Paperwithcode
+- trending trên trang paper with code
+- paper with code hôm nay có gì hot không em
+- trending paper with code hiện h
+- trend paper with code
 
 ## intent:ask_competition
 - có cuộc thi nào đang diễn ra không em
@@ -375,6 +395,7 @@
 - mọi người đang quan tâm những bài nào trên medium vậy em
 - những bài viết hay trên medium
 - những bài viết thú vị trên medium
+- top 10 paper trending trên medium
 
 ## lookup:topic
   data/lookup_tables/topic.txt
