@@ -310,6 +310,15 @@
 - competition
 - danh sách competition sắp diễn ra
 - danh sách competiton đang diễn ra
+- anh muốn kiếm tiền
+- có cuộc thi nào nhiều tiền thưởng không em
+- cuộc thi giải thưởng lớn
+- cuộc thi tiền thưởng lớn
+- anh nghèo quá
+- anh đang đói ăn
+- anh hết tiền rồi
+- competition in kaggle
+- competitions in kaggle
 
 ## intent:ask_conference
 - cho anh xin danh sách các hội thảo [năm nay](time) với
@@ -338,6 +347,7 @@
 - conference sắp tới
 - conference đang diễn ra
 - top conference
+- top conferences
 - danh sách conference đang diễn ra
 - danh sách conference sắp diễn ra
 - danh sách conference chưa diễn ra

@@ -54,6 +54,7 @@ NLI
 Information Retrieval
 Relation Extraction
 text-to-speech
+text to speech
 Text-To-Speech Synthesis
 Named Entity Recognition
 Reading Comprehension
@@ -65,6 +66,8 @@ Emotion Recognition
 Sentence Embeddings
 Sentence Pair Modeling
 Part-Of-Speech Tagging
+part of speech
+part of speech tagging
 Semantic Parsing
 Topic Models
 Coreference Resolution
@@ -73,6 +76,7 @@ Semantic Role Labeling
 Entity Linking
 Relational Reasoning
 Cross-Lingual
+cross lingual
 Question Generation
 Data Mining
 Word Sense Disambiguation
@@ -106,9 +110,11 @@ Entity Extraction
 Entity Typing
 Entity Alignment
 Graph-to-Sequence
+graph to sequence
 Intent Classification
 Conversational Response Selection
 Multi-Label Text Classification
+multi label text classification
 Amr Parsing
 Morphological Tagging
 Sarcasm Detection
@@ -167,6 +173,8 @@ Image Quality Assessment
 Human Interaction Recognition
 Action Classification
 Image-to-Image Translation
+image to image Translation
+image to image
 Image Registration
 Scene Text Detection
 Motion Estimation
@@ -227,3 +235,4 @@ Image Stitching
 Face Verification
 Face Anonymization
 Text-To-Image
+text to image

@@ -128,7 +128,7 @@ class ActionAskTrending3(Action):
         trend = beautiful_4.Trending_paperwithcode(url, 10)
         ans += trend
         dispatcher.utter_message(ans)
-        AllSlotsReset()
+        return [AllSlotsReset()]
 
        
 class ActionAskCompetiton(Action):
@@ -144,12 +144,14 @@ class ActionAskCompetiton(Action):
         competitions = beautiful_4.crawl_competitions()
         ans = "Dạ! , competitions đang có là: \n "
         dispatcher.utter_message(ans)
-        for info in competitions.split("\n"):
-            dispatcher.utter_message(info)
+        #print(competitions)
+        dispatcher.utter_message(competitions)
+        #for info in competitions.split("\n"):
+        #    dispatcher.utter_message(info)
         # ans +=competitions
 
         # dispatcher.utter_message(ans)
-        AllSlotsReset()
+        return [AllSlotsReset()]
 
 class ActionAskConference(Action):
 
@@ -169,7 +171,7 @@ class ActionAskConference(Action):
         ans += conferences
         dispatcher.utter_message(ans)
 
-        AllSlotsReset()
+        return [AllSlotsReset()]
 
 
 class ActionSuggestMedium(Action):
