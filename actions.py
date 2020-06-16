@@ -140,10 +140,16 @@ class ActionAskCompetiton(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Trả về các cuộc thi đang hoặc sắp diễn ra trên kaggle
-        url = "https://www.kaggle.com/competitions"
-        dispatcher.utter_message("Các cuộc thi đang diễn ra trên kaggle là: {}".format(url))
 
-        # Code xử lý trả về kết quả
+        competitions = beautiful_4.crawl_competitions()
+        ans = "Dạ! , competitions đang có là: \n "
+        dispatcher.utter_message(ans)
+        for info in competitions.split("\n"):
+            dispatcher.utter_message(info)
+        # ans +=competitions
+
+        # dispatcher.utter_message(ans)
+        AllSlotsReset()
 
 class ActionAskConference(Action):
 

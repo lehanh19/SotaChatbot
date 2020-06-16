@@ -5,8 +5,11 @@ import time
 import os
 import sys
 import lxml
+import kaggle
 from lxml import html
+from shell import shell
 import xml.etree.cElementTree as etree
+
 
 def CreateURl(Conference=None, Keywork=None, Year=2020, number_of_paper=5):
     urlparser_first = 'http://export.arxiv.org/api/query?search_query='
@@ -136,6 +139,29 @@ def crawl_conference(url=None, number_of_conference=None):
         result += text + "\n" + "link summary conference: " + link_summary + "\n" + "link conference:         " + link_conference + "\n"
     return result
 
+def crawl_competitions():
+
+    """ we using Kaggle API for crawl competitions """
+
+    READ_SHELL_COMMAND = shell('kaggle competitions list')
+    information = []
+    for file in READ_SHELL_COMMAND.output():
+        information.append(file)
+
+    result = ""
+    link_perfix = 'https://www.kaggle.com/c/'
+    for index, value in enumerate(information):
+        if index == 1 :
+            continue
+        value = value.replace("userHasEntered","").replace("True","").replace("False","")
+        result += value + "\n"
+        if index >1:
+            link = "Link: " + link_perfix + value.split(" ")[0] + "\n"
+            result +=link
+
+
+    return result
+
 def _main_(args):
     if __name__ == '__main__':
         keyword_search = ' '.join(args.keyword)
@@ -149,7 +175,6 @@ def _main_(args):
         ans = CrawlPaper(url=url_origin)
         for item in ans:
             print(item)
-        # print("why ????????")
 # crawl trending in github.com/trending
         print("crawling trend/github................")
         # time.sleep(5)
@@ -168,6 +193,10 @@ def _main_(args):
         ans = crawl_conference('http://www.guide2research.com/topconf/',number_of_conference = 6).split("\n")
         for item in ans:
             print (item)
+# crawl competitions
+        print("crawling competitions in kaggle")
+        ans = crawl_competitions()
+        print(ans)
 
         print("end .................................................")
 
