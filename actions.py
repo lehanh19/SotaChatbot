@@ -182,6 +182,11 @@ class ActionSuggestMedium(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Trả về các bài viết hay trên medium
         url = "https://medium.com/search?q=machine%20learning"
-        dispatcher.utter_message("Những bài viết hay trên medium là: {}".format(url))
+
+        ans = "Dạ, trên Medium đang có một vài bài viết hay và được rất nhiều người quan tâm, anh chị có thể tham khảo ạ: \n"
+
+        ans += "[info]" + beautiful_4.crawl_medium() + "[/info]"
+
+        dispatcher.utter_message(ans)
 
         # Code xử lý trả về kết quả

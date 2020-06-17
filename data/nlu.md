@@ -92,6 +92,10 @@
 - cảm ơn
 - thank you so much
 - great! Thanks
+- oki em
+- ok em
+- ok
+- tốt
 
 ## intent:praise
 - bot giỏi quá
@@ -191,6 +195,8 @@
 - thế cho anh paper về [deepfake](topic) đi
 - [deepfake](topic)
 - [u-net](topic)
+- [saliency detection](topic) thì sao em
+- [saliency prediction](topic) nữa
 
 ## intent:ask_trending1
 - Đang có hot không em?
@@ -226,6 +232,12 @@
 - gần đây đang có xu hướng nghiên cứu gì
 - gần đây mọi người đang quan tâm về vấn đề gì
 - mọi người đang quan tâm gì vậy em
+- đang có xu hướng gì vậy em
+- xu hướng hiện giờ
+- mọi người đang quan tâm gì
+- mọi người đang quan tâm gì
+- vấn đề mọi người đang quan tâm
+- đề tài đang được mọi người quan tâm
 
 ## intent:ask_trending2
 - Github [hôm nay](time) có gì hot
@@ -268,6 +280,10 @@
 - Trend Github
 - một vài repo hay trên github
 - những repo hay trên git
+- xu hướng github
+- những repo hay
+- trending github về deepfake
+- trending github về segmentation
 
 ## intent:ask_trending3
 - Paperwithcode đang trend gì nhỉ?
@@ -299,6 +315,8 @@
 - paper with code hôm nay có gì hot không em
 - trending paper with code hiện h
 - trend paper with code
+- xu hướng hiện nay trên paper with code
+- xu hướng paper with code
 
 ## intent:ask_competition
 - có cuộc thi nào đang diễn ra không em
@@ -374,6 +392,10 @@
 - top conference đang diễn ra
 - top conference sắp diễn ra
 - hội thảo
+- tháng tới có sự kiện nào
+- tháng tới có hội thảo nào
+- tháng 4/2020 có hội thảo nào
+- tháng 2/2020 có sự kiện nào
 
 ## intent:suggest_medium
 - Medium có bài gì hay không em
