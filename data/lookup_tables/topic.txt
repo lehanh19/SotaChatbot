@@ -30,6 +30,53 @@ Word embedding
 Translation
 Summarize text
 Word2vec
+recommendation system
+recommendation
+attention
+yolo
+segmentation
+decoder
+encoder
+Layered depth image
+LDI
+openai
+3d pose estimation
+variational autoencoders
+autoencoder
+panoptic segmentation
+adversarial network
+multi head attention
+image recognization
+image segmentation
+transferlearning
+self-supervised learning
+data preprocessing
+NER
+deeplabv3
+CNN
+3D Object Detection
+Sign Language Translation
+Face Recognition
+Animation
+Face Detection
+GAN image forensics
+Face Reenactment
+Image Stitching
+Face Verification
+Face Anonymization
+Text-To-Image
+text to image
+security
+computer vision
+natural language processing
+resnet
+unet
+transformer
+u-net
+deepfake
+panoptic segmentation
+saliency prediction
+saliency detection
 QA matching
 Seq2seq
 Seq2seq attention
@@ -224,26 +271,3 @@ Art Analysis
 Image Morphing
 Instance Search
 Human Dynamics
-3D Object Detection
-Sign Language Translation
-Face Recognition
-Animation
-Face Detection
-GAN image forensics
-Face Reenactment
-Image Stitching
-Face Verification
-Face Anonymization
-Text-To-Image
-text to image
-security
-computer vision
-natural language processing
-resnet
-unet
-transformer
-u-net
-deepfake
-panoptic segmentation
-saliency prediction
-saliency detection

@@ -197,6 +197,36 @@
 - [u-net](topic)
 - [saliency detection](topic) thì sao em
 - [saliency prediction](topic) nữa
+- tìm giúp chị bài báo về [recommendation](topic) đi em
+- [recommendation system](topic)
+- [attention](topic)
+- [yolo](topic)
+- [yolov3](topic)
+- [segmentation](topic)
+- [decoder](topic)
+- [encoder](topic)
+- [Layered depth image](topic)
+- [layered depth image](topic)
+- [LDI](topic)
+- [openai](topic)
+- [3d pose estimation](topic)
+- [variational autoencoders](topic)
+- [autoencoder](topic)
+- [panoptic segmentation](topic)
+- [adversarial network](topic)
+- [multi head attention](topic)
+- [image recognization](topic)
+- [image segmentation](topic)
+- [transferlearning](topic)
+- [self-supervised learning](topic)
+- [data preprocessing](topic)
+- [NER](topic)
+- [ICML](conference)
+- [ICML](conference) [2020](year)
+- [deeplabv3](topic)
+- [CNN](topic)
+- [NLP](topic)
+- [deep generative model](topic)
 
 ## intent:ask_trending1
 - Đang có hot không em?

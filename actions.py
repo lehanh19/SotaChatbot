@@ -48,14 +48,14 @@ class ActionAskPaper(Action):
             year = int(year)
             year = str(year - 2)
 
-        dispatcher.utter_message("Dạ, em đang tìm kiếm câu trả lời phù hợp nhất với yêu cầu của anh chị. Anh (chị) đợi em một lát ạ ^-^")
-
-        if year is None:
-            year = 2020
-        ans = "[info]"
-        ans += get_papers(conference, topic, year) + "[/info]"
-        # print(ans)
-        # time.sleep(5)
+        ans = ""
+        if topic is None and conference is None:
+            ans = "Dạ, anh chị vui lòng tìm kiếm paper giúp em theo form sau với ạ: \n \"paper về + tên bài toán anh chị muốn hỏi\""
+        else:
+            ans += "Dạ, em tìm được 1 số câu trả lời này, anh (chị) xem có phù hợp không ạ. \n"
+            if year is None:
+                year = 2020
+            ans += "[info]" +get_papers(conference, topic, year) + "[/info]"
         
         dispatcher.utter_message(ans)
     
