@@ -86,7 +86,7 @@
 - good job
 - cảm ơn bạn nha
 - cảm ơn nhiều
-- thank you
+- thank youlà
 - cảm ơn bot nha
 - thanks bot
 - cảm ơn
@@ -105,7 +105,7 @@
 - ui giỏi thế
 - bot thông minh
 - đẹp trai đấy
-- Ênm đệnp lắm
+- Ênm  lắm
 
 ## intent:decry
 - quá tệ
@@ -125,7 +125,12 @@
 - paper [face recognition](topic)
 - paper [text recognition](topic)
 - paper [GAN](topic)
-- [Bert](topic)
+- [Bert](topic
+- paper [tranfers learning](topic) em ơi
+- paper [transformers](topic)
+- paper [image augmentation](topic)
+- paper [text augmentation](topic)
+- paper [data augementation](topic)
 - Tìm cho anh mấy paper mới về [text classification](topic) đi
 - có paper nào hay về [image classification](topic) không em
 - Có paper nào mới về [instance segment](topic) không em?

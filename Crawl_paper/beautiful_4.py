@@ -56,7 +56,7 @@ def CrawlPaper(url=None):
         s += str(index + 1) + "." + see + "\n"
         s += "Link paper: " + sublink + "\n"
         s += "Link summary paper: " + sublink_summary + "\n"
-        s += "========================================== \n "
+        s += "======================== \n "
         ans += s
     return ans
 
@@ -162,34 +162,51 @@ def crawl_competitions():
 
     return result
 
+
 def crawl_medium():
     """ we crawl articles in medium.com """
-    url = "https://medium.com/topic/artificial-intelligence"
+    #     url = "https://medium.com/topic/artificial-intelligence"
+    url = 'https://medium.com/topic/machine-learning'
     r = requests.get(url)
-    soup = BeautifulSoup(r.text,'lxml')
-    root = soup.find('div',{'class':'a b c'}).find('div',{'class':'n p'}).find('div',{'class':'z ab ac ae af ag ah ai'})
+    soup = BeautifulSoup(r.text, 'lxml')
+    root = soup.find('div', {'class': 'a b c'}).find('div', {'class': 'n p'}).find('div',
+                                                                                   {'class': 'z ab ac ae af ag ah ai'})
 
-#         crawl main artiles
+    #         crawl main artiles
     articles_main = root.find_next('div').find_all_next('section')
     ans = ''
     for index, item in enumerate(articles_main):
         if index % 2 == 0:
             continue
+        content = ''
+        link = ''
         content = item.find('a').text
         link = item.find('a').attrs['href']
         if link.split('//')[0] != 'https:':
             link = 'https://medium.com' + link
-        ans += content  + '\n'
+
+        sub_item = link.split('?')[0]
+        sub_item1 = sub_item.split('/')[-1]
+        sub_item2 = sub_item1.split('-')[-1]
+        link = sub_item.replace(sub_item1, sub_item2)
+        if content == '' or link == '':
+            continue
+        ans += content + '\n'
         ans += link + '\n'
         ans += '============================ \n'
     # crawl popular articles
-    pupolar_articles = root.find_all_next('div',{'class':'r bv'})
-    ans += '\n' + 'POPULAR IN ARTIFICIAL INTELLIGENCE' + '\n'
+    pupolar_articles = root.find_all_next('div', {'class': 'r bv'})
+    ans += '\n' + 'POPULAR IN MACHINE LEARNING' + '\n'
     for index, item in enumerate(pupolar_articles):
         if index % 2 == 1:
             continue
         link = item.find('a').attrs['href']
         title = item.find('h4').text
+
+        sub_item = link.split('?')[0]
+        sub_item1 = sub_item.split('/')[-1]
+        sub_item2 = sub_item1.split('-')[-1]
+        link = sub_item.replace(sub_item1, sub_item2)
         ans += title + '\n'
         ans += link + '\n'
     return ans
@@ -232,6 +249,13 @@ def _main_(args):
         print(ans)
 
         print("end .................................................")
+
+# crawl medium
+        print('crawling medium \n ')
+        ans = crawl_medium()
+        ans.split('\n')
+        for item in ans:
+            print(item)
 
 
 if __name__ == '__main__':
